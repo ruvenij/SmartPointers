@@ -7,7 +7,7 @@ class UniquePointer
         UniquePointer() : myPointer(nullptr){};
         UniquePointer(T* newPointer) : myPointer(newPointer)
         {
-            std::cout << "Object created. Pointer : " << myPointer << std::endl;
+            std::cout << "UP Object created. Pointer : " << myPointer << std::endl;
         };
 
         //copy constructor
@@ -22,7 +22,7 @@ class UniquePointer
 
         ~UniquePointer()
         {
-            std::cout << "Object deleted. Pointer : " << myPointer << std::endl;
+            std::cout << "UP Object deleted. Pointer : " << myPointer << std::endl;
             delete myPointer;
         };
         
